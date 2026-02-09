@@ -12,7 +12,16 @@ function fetchPeople() {
             updateAllPeopleTable();
             updateBirthdaysThisMonthTable();
         })
-        .catch(error => console.error('Error fetching data:', error));
+        .catch(error => {
+            console.error('Error fetching data:', error);
+            const tableBody = document.getElementById('birthdaysThisMonthList');
+            const row = tableBody.insertRow();
+            const cell = row.insertCell(0);
+            cell.colSpan = 2;
+            cell.textContent = 'Error loading data. Ensure Node.js server is running (npm start).';
+            cell.style.color = 'red';
+            cell.style.textAlign = 'center';
+        });
 }
 
 let people = []; // Will be populated from API

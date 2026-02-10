@@ -13,12 +13,14 @@ body {
 
 .goToTableButton {
   font-size: 16px;
-  padding: 10px 20px; /* Adjust the padding to make the button larger */
+  padding: 10px 20px;
+  /* Adjust the padding to make the button larger */
 }
 
 #searchInput {
   padding: 8px;
-  margin-right: 10px; /* Add margin to separate the search bar and the button */
+  margin-right: 10px;
+  /* Add margin to separate the search bar and the button */
 }
 
 table {
@@ -27,7 +29,8 @@ table {
   margin-top: 20px;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
